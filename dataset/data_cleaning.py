@@ -66,6 +66,29 @@ class ChatDataCleaner:
 
         return True
 
+    def fix_data_artifacts(self, content):
+        """
+        修复数据中的异常文本：将独立的 "f" 或 "ff" 替换回 "6" 或 "66"
+        """
+        if not isinstance(content, str):
+            return content
+
+        # 逻辑说明：
+        # 1. (?<![a-zA-Z]) : 确保f前面不是字母
+        # 2. [fF]+         : 匹配1个或多个连续的f或F
+        # 3. (?![a-zA-Z])  : 确保f后面不是字母
+        # 效果：
+        # "f" -> "6"
+        # "ff" -> "66"
+        # "66f" -> "666"
+        # "pdf" -> "pdf"
+        def replace_callback(match):
+            return "6" * len(match.group(0))
+
+        # 执行替换
+        content = re.sub(r'(?<![a-zA-Z])[fF]+(?![a-zA-Z])', replace_callback, content)
+        return content
+
     def clean_and_format_chat_data(self):
         config = self.load_user_config()
         TARGET_USER = config.get("TARGET_USER")
@@ -165,9 +188,13 @@ class ChatDataCleaner:
             for msg in merged_messages:
                 # 映射角色
                 from_role = "human" if msg["role"] == "user" else "gpt"
+
+                # 修复"666"被错误替换为"fff"的数据
+                fixed_content = self.fix_data_artifacts(msg["content"])
+
                 sharegpt_conversations.append({
                     "from": from_role,
-                    "value": msg["content"]
+                    "value": fixed_content
                 })
 
             entry = {
