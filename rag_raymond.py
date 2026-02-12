@@ -11,42 +11,59 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # ================= 配置区域 =================
-DATA_FILE = "./dataset/raymond_finetune_data_clean.jsonl"
+DATA_FILE = "./dataset/raymond_sharegpt.json"
 FAISS_PATH = "raymond_faiss_index"
 LLM_MODEL = "qwen3:1.7b"
 EMBED_MODEL = "qllama/bge-small-zh-v1.5"
 
 CONTEXT_WINDOW_SIZE = 8192
 
+
 def load_and_process_data(filepath):
     """
-    读取并切分数据。
+    读取并切分数据
     """
     raw_documents = []
     print(f"正在加载数据: {filepath} ...")
 
-    with open(filepath, 'r', encoding='utf-8') as f:
-        for line in f:
-            try:
-                data = json.loads(line)
-                messages = data.get("messages", [])
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            # 加载json数据
+            data_list = json.load(f)
+
+            for data in data_list:
+                # 获取conversations
+                conversations = data.get("conversations", [])
 
                 conversation_text = ""
-                for msg in messages:
-                    if msg['role'] == 'system':
+                for msg in conversations:
+                    role = msg.get('from')
+                    content = msg.get('value')
+
+                    if role == 'system':
                         continue
 
-                    role_name = "User" if msg['role'] == 'user' else "Raymond"
-                    conversation_text += f"{role_name}: {msg['content']}\n"
+                    if role == 'human':
+                        role_name = "User"
+                    elif role == 'gpt':
+                        role_name = "Raymond"
+                    else:
+                        role_name = role
 
-                if conversation_text:
+                    conversation_text += f"{role_name}: {content}\n"
+
+                # 只有当对话不为空时才添加
+                if conversation_text.strip():
                     doc = Document(
                         page_content=conversation_text,
                         metadata={"source": "chat_history"}
                     )
                     raw_documents.append(doc)
-            except json.JSONDecodeError:
-                continue
+
+    except json.JSONDecodeError as e:
+        print(f"JSON 解析错误: {e}")
+    except Exception as e:
+        print(f"加载数据时发生错误: {e}")
 
     print(f"原始对话片段加载完成: {len(raw_documents)} 条")
 
