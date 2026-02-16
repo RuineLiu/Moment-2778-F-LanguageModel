@@ -4,3 +4,11 @@ train_2026-02-12-13-38-44/
 .venv312/
 
 .venv312/
+
+# private datasets
+/datasets/
+/data/
+*.csv
+*.parquet
+*.h5
+*.pt
