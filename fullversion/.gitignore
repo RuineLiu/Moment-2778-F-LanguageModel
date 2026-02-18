@@ -1,0 +1,83 @@
+# ============================================================
+# 隐私 & 数据 - 本地保留，不上传
+# ============================================================
+
+# API 密钥
+.env
+
+# 训练数据集（蒸馏生成的原始数据 & 清洗后的数据）
+data_pipeline/raw_generated/
+data_pipeline/processed/
+
+# Raymond 的人格 & 记忆配置（个人隐私）
+resources/
+
+# ============================================================
+# 模型文件 - 体积过大，请上传至 HuggingFace
+# ============================================================
+
+# GGUF 量化模型
+*.gguf
+
+# HuggingFace 格式模型（merged_model / lora adapter 等）
+*.safetensors
+*.bin
+*.pt
+*.pth
+model/
+models/
+merged_model/
+adapter_model/
+
+# llama.cpp 构建产物
+llama.cpp/
+
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# ============================================================
+# 工具 & IDE
+# ============================================================
+
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# uv
+.uv/
+
+# ============================================================
+# 日志 & 临时文件
+# ============================================================
+
+*.log
+logs/
+tmp/
+temp/
+checkpoint/
+checkpoints/
+
+# NoneBot2 session / cache
+.cache/
+nb_run.log
