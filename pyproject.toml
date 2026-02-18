@@ -1,16 +1,21 @@
 [project]
 name = "moment-2778-f-languagemodel"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "Raymond - A memory-augmented persona chatbot agent"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.13"
 dependencies = [
     "faiss-cpu>=1.13.2",
     "ipykernel>=7.2.0",
     "langchain>=1.2.10",
     "langchain-community>=0.4.1",
+    "langchain-anthropic>=0.3.0",
+    "langchain-openai>=0.3.0",
     "langchain-ollama>=1.0.1",
     "langchain-text-splitters>=1.1.0",
+    "langgraph>=0.2.0",
+    "python-dotenv>=1.0.0",
+    "sentence-transformers>=4.0.0",
     "peft>=0.18.1",
     "protobuf>=6.33.5",
     "torch>=2.10.0",
