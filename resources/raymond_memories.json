@@ -1,0 +1,215 @@
+{
+  "description": "从群聊记录中提取的Raymond相关事实，作为长期记忆的初始数据",
+  "memories": [
+    {
+      "fact": "Raymond目前在美国宾夕法尼亚州Bethlehem读研究生，学的是计算机相关专业",
+      "topic": "个人背景",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond本科是国内双非院校毕业的",
+      "topic": "个人背景",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond有一个弟弟和一个姐姐",
+      "topic": "家庭",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond怕家长知道自己的感情取向，说会被打死",
+      "topic": "家庭",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond的姐姐中考没考上是找人帮忙进的学校，后来走了艺考",
+      "topic": "家庭",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond计划毕业后在美国工作几年赚钱然后回国",
+      "topic": "未来规划",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond觉得美国是富家子弟才能好好活下去的地方，自己是镀金完赶紧回去",
+      "topic": "留学感受",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond在美国很难交到朋友，在国内的时候朋友很多很吃得开",
+      "topic": "留学感受",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond经常想家，听王力宏的《落叶归根》会心碎",
+      "topic": "留学感受",
+      "confidence": "medium"
+    },
+    {
+      "fact": "Raymond觉得美国东西很难吃，周围连奶茶店都没有",
+      "topic": "留学感受",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond的室友他觉得是大傻逼，不抽象不幽默，说话很高冷",
+      "topic": "留学生活",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond经常自己做饭，会做牛肉、猪蹄冻、面包抹果酱等简单料理，但经常说难吃",
+      "topic": "生活",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond喜欢健身，心情不好的时候也会去健身房",
+      "topic": "爱好",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond之前喜欢一个男生，六月份表白过，对方说他们是soulmate但没有明确回应。后来被拒绝了",
+      "topic": "感情经历",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond说自己拢共喜欢过两个人，都不喜欢他",
+      "topic": "感情经历",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond上一个喜欢的人是因为异地上学不爱了",
+      "topic": "感情经历",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond之前没正式谈过恋爱",
+      "topic": "感情经历",
+      "confidence": "high"
+    },
+    {
+      "fact": "樊明磊（米粒）是Raymond最好的哥们，互相叫宝宝，经常一起打游戏",
+      "topic": "社交关系",
+      "confidence": "high"
+    },
+    {
+      "fact": "樊明磊在吉林大学读研",
+      "topic": "社交关系",
+      "confidence": "high"
+    },
+    {
+      "fact": "粉刷匠（苏梦佳/苏凯昕）是樊明磊的女朋友，Raymond叫她大妈或龟mi",
+      "topic": "社交关系",
+      "confidence": "high"
+    },
+    {
+      "fact": "粉刷匠的生日是10月1日",
+      "topic": "社交关系",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond有个朋友叫李万广，经常找Raymond吐槽，Raymond觉得他除了找自己输出负能量没别的事，也不关心Raymond的生活",
+      "topic": "社交关系",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond有个朋友叫奶冻，经常一起打游戏",
+      "topic": "社交关系",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond和樊明磊有个共同认识的学长，情商很低，Raymond说他除了吵一点人渣一点三观不正一点其他还行",
+      "topic": "社交关系",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond有个认识的人叫谢子南，Raymond叫他宝宝",
+      "topic": "社交关系",
+      "confidence": "medium"
+    },
+    {
+      "fact": "Raymond共享了自己的GPT账号给樊明磊用，两人AA",
+      "topic": "日常",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond帮樊明磊用美国信用卡注册了Gemini Pro",
+      "topic": "日常",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond知道并使用Claude，打算换掉GPT改用Claude",
+      "topic": "技术",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond会用LaTeX和Overleaf写作业，学校给了免费Overleaf订阅",
+      "topic": "学习",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond上过数据挖掘课，用过Weka做机器学习",
+      "topic": "学习",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond有一门期中考试考了98分",
+      "topic": "学习",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond说外国同学数学一般但编程真的牛逼，他们上课的时候很多人都在刷算法和LeetCode",
+      "topic": "学习",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond在课堂讨论环节只发言过两次，大多数发言的都是外国人",
+      "topic": "学习",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond说自己出国了还是听不太懂课",
+      "topic": "学习",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond爱打游戏，玩QQ飞车、金铲铲（叫'铲'），经常叫樊明磊和奶冻一起玩",
+      "topic": "爱好",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond圣诞节有一个月的假期，想过回国",
+      "topic": "生活",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond所在的州禁枪",
+      "topic": "留学生活",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond在学校研究组里是唯一一个双非背景的学生",
+      "topic": "学习",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond说自己在国内英语课上很装，但出了国还是听不懂",
+      "topic": "学习",
+      "confidence": "medium"
+    },
+    {
+      "fact": "Raymond曾经让樊明磊唱歌并承诺发20块红包",
+      "topic": "社交趣事",
+      "confidence": "high"
+    },
+    {
+      "fact": "Raymond说过下辈子要当渣男当中央空调给每个男孩女孩一个家",
+      "topic": "感情观",
+      "confidence": "medium"
+    },
+    {
+      "fact": "Raymond说自己以前从来不叽叽喳喳的，是后来才变得爱跟朋友聊天倾诉",
+      "topic": "性格",
+      "confidence": "high"
+    }
+  ]
+}
